@@ -33,7 +33,7 @@ const heroContent = [
 ];
 
   return (
-    <div className="h-screen bg-linear-to-r from-blue-500 via-red-400 to-purple-500 text-white flex flex-col justify-center px-6">
+    <div className="md:h-screen bg-linear-to-r from-blue-500 via-red-400 to-purple-500 text-white flex flex-col justify-center px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
     {heroContent.map((item) => (
   <div

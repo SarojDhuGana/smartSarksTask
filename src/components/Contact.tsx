@@ -81,7 +81,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-r from-blue-500 via-red-400 to-purple-500 text-white flex items-center justify-center px-6 py-12">
+    <div className="md:min-h-screen bg-linear-to-r from-blue-500 via-red-400 to-purple-500 text-white flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-12">
         <div className="flex-1 bg-white text-gray-800 p-10 rounded-2xl shadow-2xl hover:shadow-xl transition duration-300">
           <h2 className="text-4xl font-extrabold mb-8 text-center lg:text-left text-gray-900">
