@@ -3,7 +3,6 @@ import { useState } from "react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <header className="bg-black text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center py-4">
@@ -14,6 +13,7 @@ export default function Header() {
           <Link to="/" className="hover:text-yellow-300 transition-colors">Home</Link>
           <Link to="/about" className="hover:text-yellow-300 transition-colors">About</Link>
           <Link to="/banner" className="hover:text-yellow-300 transition-colors">CTA Banner</Link>
+          <Link to="/timeline" className="hover:text-yellow-300 transition-colors">Timeline</Link>
           <Link to="/contact" className="hover:text-yellow-300 transition-colors">Contact</Link>
         </nav>
         <div className="md:hidden">
@@ -33,6 +33,8 @@ export default function Header() {
         <nav className="md:hidden bg-blue-500 px-4 pb-4 flex flex-col gap-4 text-lg font-medium capitalize">
           <Link to="/" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/about" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>About</Link>
+           <Link to="/banner" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>CTA Banner</Link>
+           <Link to="/timeline" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>Timeline</Link>
           <Link to="/contact" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
       )}
