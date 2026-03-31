@@ -1,7 +1,12 @@
 import mtEverest from "../assets/mtEverest.png";
+import { motion } from "framer-motion";
 export default function CTABanner() {
   return (
-    <div className="relative rounded-xl h-96 md:w-full flex justify-center items-center bg-cover bg-center px-2 py-4" style={{ backgroundImage: `url(${mtEverest})` }}>
+    <motion.div
+    initial={{opacity:0, y: -50}}
+    transition={{duration: 0.8, ease: 'easeIn'}}
+    animate={{opacity: 2, y: 0}}
+    className="relative rounded-xl h-96 md:w-full flex justify-center items-center bg-cover bg-center px-2 py-4" style={{ backgroundImage: `url(${mtEverest})` }}>
       <div className="absolute inset-0 bg-linear-to-r bg-gray-400/20 via-black/10 to-black/20"></div>
       <div className="relative text-white text-center px-6 max-w-3xl">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-100 w-full">
@@ -15,6 +20,6 @@ export default function CTABanner() {
           Start Your Trip
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
