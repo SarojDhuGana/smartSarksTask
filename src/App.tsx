@@ -5,8 +5,7 @@ import MainLayout from "./components/MainLayout";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
-
-
+import CTABanner from "./components/CTABanner";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +14,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "/about" , element: <About /> },
+       { path: "/banner" , element: <CTABanner /> },
       { path: "/contact", element: <Contact /> },
     ],
   },

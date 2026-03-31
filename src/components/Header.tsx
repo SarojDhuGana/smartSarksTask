@@ -13,6 +13,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 font-medium text-lg capitalize">
           <Link to="/" className="hover:text-yellow-300 transition-colors">Home</Link>
           <Link to="/about" className="hover:text-yellow-300 transition-colors">About</Link>
+          <Link to="/banner" className="hover:text-yellow-300 transition-colors">CTA Banner</Link>
           <Link to="/contact" className="hover:text-yellow-300 transition-colors">Contact</Link>
         </nav>
         <div className="md:hidden">
