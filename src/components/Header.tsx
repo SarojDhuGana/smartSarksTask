@@ -14,6 +14,7 @@ export default function Header() {
           <Link to="/about" className="hover:text-yellow-300 transition-colors">About</Link>
           <Link to="/banner" className="hover:text-yellow-300 transition-colors">CTA Banner</Link>
           <Link to="/timeline" className="hover:text-yellow-300 transition-colors">Timeline</Link>
+          <Link to="/service" className="hover:text-yellow-300 transition-colors">Service</Link>
           <Link to="/contact" className="hover:text-yellow-300 transition-colors">Contact</Link>
         </nav>
         <div className="md:hidden">
@@ -35,6 +36,7 @@ export default function Header() {
           <Link to="/about" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>About</Link>
            <Link to="/banner" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>CTA Banner</Link>
            <Link to="/timeline" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>Timeline</Link>
+            <Link to="/service" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>Service</Link>
           <Link to="/contact" className="hover:text-yellow-300 transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
       )}

@@ -7,7 +7,7 @@ export default function Timeline() {
     target: containerRef,
     offset: ["start end", "end start"],
   });
-  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "110%"]);
   const timelineContent = [
     {
       title: "Project Idea & Planning",
@@ -65,7 +65,7 @@ export default function Timeline() {
                     opacity: isInView ? 1 : 0,
                     x: isInView ? 0 : -40,
                   }}
-                  transition={{ duration: 0.4, delay: 0.2 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
                   className="p-6 rounded-lg w-96 "
                 >
                   <h2 className="text-3xl font-serif capitalize">{item.title}</h2>
