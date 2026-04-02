@@ -1,6 +1,6 @@
+
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-
 export default function Timeline() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -42,7 +42,11 @@ export default function Timeline() {
           />
           {timelineContent.map((item, index) => {
             const cardRef = useRef(null);
-            const isInView = useInView(cardRef, { margin: "-30% 0px -30% 0px" });
+            const isInView = useInView(cardRef, {
+               margin: "-40% 0px -40% 0px",
+              once: true,
+             }
+            );
             return (
               <div
                 key={index}
@@ -59,9 +63,9 @@ export default function Timeline() {
                 <motion.div
                   animate={{
                     opacity: isInView ? 1 : 0,
-                    x: isInView ? 0 : -60,
+                    x: isInView ? 0 : -40,
                   }}
-                  transition={{ duration: 0.6 }}
+                  transition={{ duration: 0.4, delay: 0.2 }}
                   className="p-6 rounded-lg w-96 "
                 >
                   <h2 className="text-3xl font-serif capitalize">{item.title}</h2>
