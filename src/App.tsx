@@ -5,8 +5,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import CTABanner from "./components/CTABanner";
 import Timeline from "./components/Timeline";
-import Service from "./components/Service";
-
+import Service from "./ShowCase/Services/page";
+import ServiceDetails from "./ShowCase/Services/[id]/page";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +17,7 @@ const router = createBrowserRouter([
       { path: "/banner" , element: <CTABanner /> },
       { path: "/contact", element: <Contact /> },
       {path: "/service", element: <Service/>},
+      {path: '/service/:id', element: <ServiceDetails/> },
       {path: "/timeline", element: <Timeline/>}
     ],
   },
